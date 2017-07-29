@@ -111,10 +111,10 @@ input[value="open_nav"] {
         transition: 1s;
         transform-origin: top;
         position: absolute;
-        width: 106%;
+        width: 140%;
         background-color: rgba(0,0,0,0.8);
-        left: 0px;
-        top: 0px;
+        left: -235px;
+        top: 50px;
         z-index: 100000;
         text-align: center;
     }
@@ -139,6 +139,21 @@ input[value="open_nav"] {
     input[value="open_nav"]:checked ~ .menu-btn .line:last-child{
         transform: rotate(-45deg);
         margin-top: -12px;
+    }
+}
+@media ( max-width:767px){
+    #header ul {
+        transform: scale(1,0);
+        opacity: 0;
+        transition: 1s;
+        transform-origin: top;
+        position: absolute;
+        width: 106%;
+        background-color: rgba(0,0,0,0.8);
+        left: 0px;
+        top: 0px;
+        z-index: 100000;
+        text-align: center;
     }
 }
 #banner{
@@ -217,6 +232,11 @@ input[value="open_nav"] {
 #about iframe{
     min-height: 300px;
 }
+#quote{
+    background-color: darkgray;
+    color: white;
+    border: 8px solid black;
+}
 #quote h1{
     color: blue;
 }
@@ -283,22 +303,35 @@ progress::-webkit-progress-value {
 #projects .figure img{
     width: 100%;
 }
-#projects .figureinfo h1{
-    color: white;
-    position: absolute;
-    z-index: 10;
-    left: 20%;
-    top: 40%;
-    display: none;
+#projects{
+    overflow: hidden;
 }
 #projects .figure:after {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.7);
-    top: 0%;
-    display: block;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s;
+}
+#projects .figure:hover:after {
+    transform: translateY(0%);
+    opacity: 1;
+}
+#projects .figureinfo{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    color: white;
+    opacity: 0;
+    transition: 4s;
+}
+#projects .figure:hover ~.figureinfo {
+    opacity: 1;
 }
 #contact{
     background-color: #ECB731;
