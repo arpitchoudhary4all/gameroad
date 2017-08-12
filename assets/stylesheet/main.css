@@ -12,8 +12,13 @@
     background-color:#25405D;
 }
 .head{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 800;
+}
+@media (max-width:767px){
+    .head{
+    font-size: 40px;
+    }
 }
 #header h1{
     color: gold;
@@ -205,7 +210,6 @@ progress::-webkit-progress-value {
 #experience,#skills,#services{
     background-color: rgba(0,0,0,0.8);
     color: snow;
-    margin: 0px 15px;
 }
 #experience h4{
     font-size: 30px;
@@ -280,7 +284,6 @@ progress::-webkit-progress-value {
 }
 #contact{
     background-color: #ECB731;
-    margin: 0px 15px;
 }
 #contact h1{
     margin-top: 0px;
@@ -304,13 +307,13 @@ progress::-webkit-progress-value {
     color: white;
     border: transparent;
     padding: 10px;
+    margin: 5px;
     outline: none;
     min-width: 120px;
 }
 #footer {
     background-color: black;
     color: white;
-    margin: 10px 15px 0px 15px;
     min-height: 180px;
     text-align: center;
 }
@@ -327,7 +330,6 @@ progress::-webkit-progress-value {
 #end{
     background-color: dimgrey;
     padding: 10px;
-    margin: 0px 15px;
 }
 #end a{
     color: white;
