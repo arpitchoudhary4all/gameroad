@@ -8,36 +8,34 @@
 .orange{
     color: orange;
 }
-#header,#banner{
-    background-color: #0086FE;
+#header{
+    background-color:#25405D;
 }
-#header h2{
-    color: white;
-    margin-bottom: 0px;
+.head{
+    font-size: 60px;
+    font-weight: 800;
 }
-#header .row{
-    width: 100%;
-}
-#header .row span{
-    font-size: 22px;
-    background-color:#38A1FE;
+#header h1{
+    color: gold;
+    margin: 5px;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: cursive;
 }
 #header ul {
-    margin: 0px;
+    margin: 2px;
     padding: 0px;
     list-style: none;
-    position: relative;
 }
 #header ul li {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    padding: 25px 10px;
-    margin: 0px 7px;
+    padding:20px;
+    margin: 0px; 
 }
 #header ul li a {
     color: #CCC;
     text-decoration: none;
-    text-transform: uppercase;
     position: relative;
 }
 #header ul li a:after {
@@ -54,6 +52,9 @@
     width: 80%;
     left: 10%;
     opacity: 1;
+}
+#header ul li:hover a{
+    color: gold;
 }
 .menu-btn {
     position: absolute;
@@ -155,97 +156,32 @@ input[value="open_nav"] {
         z-index: 100000;
         text-align: center;
     }
-}
-#banner{
-    color: white;
-    font-size: 25px;
-}
-#banner button{
-    display: block;
-    background-color:#0086FE;
-    border-radius: 50% 50%;
-    height: 50px;
-    width: 50px;
-    margin: 25px;
-}
-#banner h1{
-    margin-top: 50px;
-    font-size: 30px;
-}
-#banner h2{
-    font-size: 20px;
-    color: green;
-}
-@media (max-width:480px){
-    #banner h1{
-        font-size: 22px;
+    .menu-btn{
+        top: -40px;
+        right: 20px;
     }
-    #banner h2{
-        font-size: 12px;
-    }
-}
-.blinking-cursor {
-    overflow: hidden; 
-    white-space: nowrap;
-    letter-spacing: 3px; 
-    animation: 5s blink step-end infinite;
-    animation:
-    typing 10s steps(100, end),
-    blink-caret 1s step-end infinite;
-}
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: whitesmoke; }
-}
-#banner p{
-    font-size: 20px;
-}
-@media (max-width:480px){
-    #banner p{
-        font-size:12px;
+    input[value="open_nav"]{
+        top: -42px;
+        right: 25px;
     }
 }
 #banner img{
-    max-height: 450px;
-    margin: 0 auto;
-}
-@media (max-width:992px){
-  #banner img{
-    max-height: 350px;
-}   
-}
-#about .image img{ 
     width: 100%;
-    max-height: 520px;
+    max-height: 600px;
 }
-#about h1{
-    font-size: 45px;
-    margin-bottom: 0px;
-}
+
 #about h3{
     margin-top: 0px;
 }
-#about iframe{
-    min-height: 300px;
+#about p{
+    font-size: 20px;
+    margin: 10px 40px;
+    font-weight: 600;
 }
 #quote{
     background-color: darkgray;
     color: white;
     border: 8px solid black;
-}
-#quote h1{
-    color: blue;
-}
-#quote button{
-    background-color: black;
-    color: whitesmoke;
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 50px;
 }
 #skills{
     background-image: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/my_info-demo_Free/1502743516/web/images/skills.jpg");
@@ -270,7 +206,15 @@ progress::-webkit-progress-value {
 }
 .row p{
     font-size: 18px;
-    margin: 0 6px 12px;
+    margin: 0px 6px 12px;
+}
+#experience,#skills,#services{
+    background-color: rgba(0,0,0,0.8);
+    color: snow;
+    margin: 0px 15px;
+}
+#experience h4{
+    font-size: 30px;
 }
 #experience h3{
     text-decoration: underline;
@@ -278,6 +222,7 @@ progress::-webkit-progress-value {
 #services{
     background-color: #171717;
     color: white;
+    padding: 0px 10px;
 }
 #services .row{
   justify-content: space-around;
@@ -328,13 +273,20 @@ progress::-webkit-progress-value {
     top: 30%;
     color: white;
     opacity: 0;
+    z-index: -999;
     transition: 4s;
+}
+#projects .figureinfo h1{
+    margin: 0px;
+    padding: 0px;
 }
 #projects .figure:hover ~.figureinfo {
     opacity: 1;
+    z-index: 10;
 }
 #contact{
     background-color: #ECB731;
+    margin: 0px 15px;
 }
 #contact h1{
     margin-top: 0px;
@@ -364,6 +316,7 @@ progress::-webkit-progress-value {
 #footer {
     background-color: black;
     color: white;
+    margin: 10px 15px 0px 15px;
     min-height: 180px;
     text-align: center;
 }
@@ -380,6 +333,7 @@ progress::-webkit-progress-value {
 #end{
     background-color: dimgrey;
     padding: 10px;
+    margin: 0px 15px;
 }
 #end a{
     color: white;
